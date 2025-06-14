@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотоальбомы - МОУ СШ №2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            background-color: #005baa;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .logo {
+            height: 80px;
+            margin-right: 20px;
+        }
+        
+        .school-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .nav {
+            background-color: #003366;
+            padding: 10px 0;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            list-style: none;
+        }
+        
+        .nav-button {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-button:hover, .nav-button.active {
+            background-color: #005baa;
+        }
+        
+        .main-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            color: #005baa;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .photoalbums {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .album {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .album:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .album-image {
+            height: 180px;
+            overflow: hidden;
+        }
+        
+        .album-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .album-info {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .album-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #003366;
+        }
+        
+        .album-date {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .photoalbums {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            
+            .nav-container {
+                flex-wrap: wrap;
+            }
+            
+            .nav-button {
+                padding: 8px 12px;
+                margin: 5px;
+                font-size: 14px;
+            }
+            
+            .logo-container {
+                flex-direction: column;
+            }
+            
+            .logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://mgsosh02.volgogradschool.ru/local/templates/main/img/logo.png" alt="Логотип школы" class="logo">
+            <div class="school-name">
+                Муниципальное общеобразовательное учреждение<br>
+                "Средняя школа № 2 Городищенского района Волгограда"
+            </div>
+        </div>
+    </div>
+    
+    <div class="nav">
+        <ul class="nav-container">
+            <li><a href="/" class="nav-button">Главная</a></li>
+            <li><a href="/about" class="nav-button">О школе</a></li>
+            <li><a href="/news" class="nav-button">Новости</a></li>
+            <li><a href="/photoalbums" class="nav-button active">Фотоальбомы</a></li>
+            <li><a href="/contacts" class="nav-button">Контакты</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-container">
+        <h1>Фотоальбомы</h1>
+        
+        <div class="photoalbums">
+            <div class="album">
+                <div class="album-image">
+                    <img src="https://via.placeholder.com/300x200?text=Выпускной+2023" alt="Выпускной 2023">
+                </div>
+                <div class="album-info">
+                    <div class="album-title">Выпускной 2023</div>
+                    <div class="album-date">25.06.2023</div>
+                </div>
+            </div>
+            
+            <div class="album">
+                <div class="album-image">
+                    <img src="https://via.placeholder.com/300x200?text=День+Знаний" alt="День Знаний">
+                </div>
+                <div class="album-info">
+                    <div class="album-title">День Знаний</div>
+                    <div class="album-date">01.09.2023</div>
+                </div>
+            </div>
+            
+            <div class="album">
+                <div class="album-image">
+                    <img src="https://via.placeholder.com/300x200?text=Спортивные+соревнования" alt="Спортивные соревнования">
+                </div>
+                <div class="album-info">
+                    <div class="album-title">Спортивные соревнования</div>
+                    <div class="album-date">15.10.2023</div>
+                </div>
+            </div>
+            
+            <div class="album">
+                <div class="album-image">
+                    <img src="https://via.placeholder.com/300x200?text=Новогодний+утренник" alt="Новогодний утренник">
+                </div>
+                <div class="album-info">
+                    <div class="album-title">Новогодний утренник</div>
+                    <div class="album-date">25.12.2023</div>
+                </div>
+            </div>
+            
+            <div class="album">
+                <div class="album-image">
+                    <img src="https://via.placeholder.com/300x200?text=День+Победы" alt="День Победы">
+                </div>
+                <div class="album-info">
+                    <div class="album-title">День Победы</div>
+                    <div class="album-date">09.05.2024</div>
+                </div>
+            </div>
+            
+            <div class="album">
+                <div class="album-image">
+                    <img src="https://via.placeholder.com/300x200?text=Последний+звонок" alt="Последний звонок">
+                </div>
+                <div class="album-info">
+                    <div class="album-title">Последний звонок</div>
+                    <div class="album-date">25.05.2024</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2024 МОУ СШ №2 Городищенского района Волгограда</p>
+        <p>Контактная информация: тел. +7 (8442) 00-00-00, email: school2@volgograd.ru</p>
+    </div>
+</body>
+</html>

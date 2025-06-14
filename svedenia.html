@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сведения об образовательной организации - МБОУ ГСШ №2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header {
+            background-color: #005baa;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .logo {
+            height: 80px;
+            margin-right: 20px;
+        }
+        
+        .school-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .nav {
+            background-color: #003366;
+            padding: 10px 0;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        
+        .nav-button {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+        
+        .nav-button:hover, .nav-button.active {
+            background-color: #005baa;
+        }
+        
+        .main-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        .content-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #005baa;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #003366;
+            margin-top: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #005baa;
+        }
+        
+        .info-block {
+            margin-bottom: 30px;
+        }
+        
+        .info-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #005baa;
+        }
+        
+        .documents-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .documents-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .documents-list li:before {
+            content: "•";
+            color: #005baa;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .document-link {
+            color: #005baa;
+            text-decoration: none;
+        }
+        
+        .document-link:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .map-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #005baa;
+            text-decoration: none;
+        }
+        
+        .map-link:hover {
+            text-decoration: underline;
+        }
+        
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .schedule-table, .schedule-table th, .schedule-table td {
+            border: 1px solid #ddd;
+        }
+        
+        .schedule-table th, .schedule-table td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .schedule-table th {
+            background-color: #005baa;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-container {
+                flex-direction: column;
+            }
+            
+            .logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            
+            .nav-button {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+            
+            .content-container {
+                padding: 15px;
+            }
+            
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://mgsosh02.volgogradschool.ru/local/templates/main/img/logo.png" alt="Логотип школы" class="logo">
+            <div class="school-name">
+                Муниципальное бюджетное общеобразовательное учреждение<br>
+                «Городищенская средняя школа № 2»
+            </div>
+        </div>
+    </div>
+    
+    <div class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-button">Главная</a>
+            <a href="sveden.html" class="nav-button active">Сведения об образовательной организации</a>
+            <a href="#" class="nav-button">Учебная деятельность</a>
+            <a href="#" class="nav-button">Воспитательная работа</a>
+            <a href="#" class="nav-button">Родителям</a>
+            <a href="#" class="nav-button">Ученикам</a>
+            <a href="#" class="nav-button">Контакты</a>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <h1>Сведения об образовательной организации</h1>
+        
+        <div class="content-container">
+            <div class="info-block">
+                <div class="info-title">Полное наименование образовательной организации*</div>
+                <p>Муниципальное бюджетное общеобразовательное учреждение «Городищенская средняя школа № 2»</p>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-title">Сокращенное наименование образовательной организации*</div>
+                <p>МБОУ ГСШ № 2</p>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-title">Адрес местонахождения образовательной организации*</div>
+                <p>403003, Россия, Волгоградская область, Городищенский район, р.п. Городище, ул. Пархоменко, д.35а</p>
+                
+                <div class="map-container">
+                    <iframe src="https://yandex.ru/map-widget/v1/?text=Россия%2C%20Волгоградская%20область%2C%20Городищенский%20район%2C%20р.п.%20Городище%2C%20ул.%20Пархоменко%2C%20д.35а&z=16" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
+                </div>
+                
+                <a href="https://yandex.ru/maps/?text=Россия%2C%20Волгоградская%20область%2C%20Городищенский%20район%2C%20р.п.%20Городище%2C%20ул.%20Пархоменко%2C%20д.35а" class="map-link" target="_blank">Открыть в Яндекс Картах</a>
+                
+                <p>Маршрутное такси: остановка ул. Анреева № 110, 149, 158, 138</p>
+                <p>Маршрутное такси: остановка: Школа № 2 № 1, 1Э</p>
+                <p>Школьный автобус совершает два рейса по направлениям:</p>
+                <ul>
+                    <li>1. школьный двор - переезд - Разгуляевка - Дачи - школьный двор</li>
+                    <li>2. школьный двор - дачи - Разгуляевка - Разгуляевка - дачи - школьный двор</li>
+                </ul>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-title">Контактные телефоны образовательной организации*</div>
+                <p>+7(84468) 3-45-80</p>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-title">Адрес электронной почты образовательной организации</div>
+                <p>gor_sh2@volganet.ru</p>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-title">Официальная страница Образовательной организации в социальных сетях</div>
+                <p>Не указана</p>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-title">Дата создания образовательной организации</div>
+                <p>04.02.1992</p>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-title">Режим работы образовательной организации</div>
+                <p>Школа работает в режиме пятидневной учебной недели.</p>
+                <p>Уроки начинаются в 8.00.</p>
+                <p>Продолжительность уроков – 40 минут (в первых классах в соответствии с рекомендациями).</p>
+                <p>Продолжительность учебного года в первых классах – 33 недели, в остальных – 34 недели.</p>
+                <p>Продолжительность учебных четвертей:</p>
+                <ul>
+                    <li>1 четверть – 8 недель,</li>
+                    <li>2 четверть – 8 недель,</li>
+                    <li>3 четверть – 11 недель (2-11 классы), 10 недель (1 классы),</li>
+                    <li>4 четверть – 8 недель.</li>
+                </ul>
+                <p>Обучение организовано в две смены.</p>
+                <p>Основная форма организации учебного процесса в школе – классно-урочная.</p>
+                <p>В рамках изучения иностранных языков, информатики, технологии допускается деление классов на группы.</p>
+                
+                <div class="info-title">График каникул в 2024-2025 учебном году</div>
+                <ul>
+                    <li>осенние каникулы с 28.10.2024 по 5.11.2024 (10 дней);</li>
+                    <li>зимние каникулы с 30.12.2024 по 08.01.2025 (10 дней)</li>
+                    <li>весенние каникулы с 24.03.2025 по 01.04.2025 (9 дней)</li>
+                </ul>
+                <p>Дополнительные каникулы для учащихся первых классов с 17 февраля по 25 февраля 2025 года</p>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-title">График работы образовательной организации</div>
+                <table class="schedule-table">
+                    <tr>
+                        <td>ПЕРВАЯ СМЕНА:</td>
+                        <td>08.00 - 14.00</td>
+                    </tr>
+                    <tr>
+                        <td>ВТОРАЯ СМЕНА:</td>
+                        <td>11.35 - 18.30 (6,7 кл.)<br>13.20 - 17.40 (2А, 3А, 3Б, 4Б)</td>
+                    </tr>
+                    <tr>
+                        <td>СПОРТИВНЫЕ СЕКЦИИ:</td>
+                        <td>19.00 - 20.00</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-title">Учредители образовательной организации</div>
+                <p>Администрация Городищенского муниципального района</p>
+                <p><a href="http://www.agmr.ru" class="document-link">http://www.agmr.ru</a></p>
+                <p>403003, Волгоградская область, Городищенский район, р.п. Городище, пл. 40-летия Сталинградской битвы, 1.</p>
+                <p>Контактный телефон учредителя: 88446833838</p>
+                <p>Электронная приёмная учредителя: ra_gorod@volganet.ru</p>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-title">Места осуществления образовательной деятельности</div>
+                <p>муниципальное бюджетное общеобразовательное учреждение «Городищенская средняя школа № 2», расположенная по адресу: 403003, Россия. Волгоградская область, Городищенский район, р.п. Городище, ул. Пархоменко, д.35а, стадион на ул. Фрунзе, объекты культуры и спорта р.п.Городище</p>
+                
+                <div class="info-title">Лицензия МБОУ ГСШ № 2</div>
+                <p><a href="#" class="document-link">(скачать)</a> <a href="#" class="document-link">(посмотреть)</a> <a href="#" class="document-link">(текст документа)</a></p>
+                <p>приложение к лицензии <a href="#" class="document-link">(скачать)</a> <a href="#" class="document-link">(посмотреть)</a> <a href="#" class="document-link">(текст документа)</a></p>
+                
+                <div class="info-title">Места осуществления образовательной деятельности по дополнительным образовательным программам:</div>
+                <p>муниципальное бюджетное общеобразовательное учреждение «Городищенская средняя школа № 2», расположенная по адресу: 403003, Россия. Волгоградская область, Городищенский район, р.п. Городище, ул. Пархоменко, д.35а, объекты культуры и спорта р.п.Городище</p>
+                
+                <div class="info-title">Места осуществления образовательной деятельности по дополнительным профессиональным программам:</div>
+                <p>дополнительные профессиональные программы в учреждении не реализуются.</p>
+                
+                <div class="info-title">Места осуществления образовательной деятельности по основным программам профессионального обучения:</div>
+                <p>основные программы профессионального обучения в учреждении не реализуются.</p>
+                
+                <div class="info-title">Места осуществления образовательной деятельности при использовании сетевой формы реализации образовательных программ:</div>
+                <p>муниципальное бюджетное общеобразовательное учреждение «Городищенская средняя школа № 2».</p>
+                
+                <div class="info-title">Места проведения практики:</div>
+                <p>практика учреждением не проводится</p>
+                
+                <div class="info-title">Места проведения практической подготовки обучающихся:</div>
+                <p>муниципальное бюджетное общеобразовательное учреждение «Городищенская средняя школа № 2».</p>
+                
+                <div class="info-title">Места проведения государственной итоговой аттестации:</div>
+                <p>определяются приказами комитета образования, науки и молодежной политики Волгоградской области.</p>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-title">Лицензия (выписка из реестра лицензий на осуществление образовательной деятельности)</div>
+                <p>Лицензия (выписка из реестра)</p>
+                <p><a href="#" class="document-link">Реестровая выписка (скачать)</a> <a href="#" class="document-link">(посмотреть)</a> <a href="#" class="document-link">(текст документа)</a></p>
+                <p><a href="#" class="document-link">Реестровая выписка (скачать)</a> <a href="#" class="document-link">(посмотреть)</a> <a href="#" class="document-link">(текст документа)</a></p>
+                <p><a href="#" class="document-link">Лицензия МБОУ ГСШ № 2.pdf (скачать)</a> <a href="#" class="document-link">(посмотреть)</a></p>
+                
+                <div class="info-title">Приложение (при наличии)</div>
+                <p><a href="#" class="document-link">Приложение к лицензии МБОУ ГСШ № 2 (скачать)</a> <a href="#" class="document-link">(посмотреть)</a></p>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-title">Свидетельство о государственной аккредитации</div>
+                <p><a href="#" class="document-link">Реестровая выписка (скачать)</a> <a href="#" class="document-link">(посмотреть)</a> <a href="#" class="document-link">(текст документа)</a></p>
+                <p><a href="#" class="document-link">Реестровая выписка (скачать)</a> <a href="#" class="document-link">(посмотреть)</a> <a href="#" class="document-link">(текст документа)</a></p>
+                <p><a href="#" class="document-link">Реестровая выписка (скачать)</a> <a href="#" class="document-link">(посмотреть)</a> <a href="#" class="document-link">(текст документа)</a></p>
+                <p><a href="#" class="document-link">Свидетельство о государственной аккредидации. аккредитации МБОУ ГСШ № 2 (скачать)</a> <a href="#" class="document-link">(посмотреть)</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2024 МБОУ ГСШ №2 Городищенского района Волгоградской области</p>
+        <p>Контактная информация: тел. +7(84468) 3-45-80, email: gor_sh2@volganet.ru</p>
+    </div>
+</body>
+</html>
